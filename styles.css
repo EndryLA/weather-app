@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background-position: center;
+  object-fit: cover;
+  background-color: black;
+}
+
+.container {
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:40vw;
+  height:70vh;
+  border-radius:20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:0;
+}
+
+#search-field {
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  height:50px;
+  margin-top:10px auto;
+  padding:5px;
+}
+
+#input-text {
+  width:80%;
+  border:1px solid black;
+  padding:8px;
+  border-radius: 15px;
+  margin-right:20px;
+  font-family: 'Roboto',sans-serif;
+  font-size:18px;
+  min-width:200px;
+}
+
+
+
+#search-img {
+  height:25px;
+  width:25px;
+  margin:0;
+  background-color: rgba(146, 77, 163, 1);
+  padding:12px;
+  border-radius:25px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+#search-img:hover {
+  background-color:rgba(127, 17, 224, 1)
+}
+
+.temperatures-display-div p {
+  color:white;
+  font-size:40px;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-weight:bold;
+  font-family:'Roboto',sans-serif;
+  width:300px;
+}
+#current-temperature {
+  font-size:100px;
+}
+
+.current-weather-type {
+  display:flex;
+  align-items:center;
+  justify-content: space-evenly;
+}
+
+#weather-type-img {
+  width:300px;
+  height:300px;
+  filter: invert(36%) sepia(46%) saturate(716%) hue-rotate(242deg) brightness(93%) contrast(91%);
+}
+.weather-data-container {
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+}
+.data-container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight:bold;
+  font-size:30px;
+  padding:20px;
+  border-radius:20px;
+  background-color:black;
+  color:white;
+  font-family:'Roboto',sans-serif;
+  font-size:28px;
+}
+
+.weather-data-img {
+  height:70px;
+  width:70px;
+  filter: invert(98%) sepia(9%) saturate(4%) hue-rotate(136deg) brightness(106%) contrast(99%);
+}
+
+@media (max-width:480px) {
+
+  .container {
+    width:100vw;
+    height:100vh;
+  }
+  #search-field {
+    width:90%;
+  }
+
+  .current-weather-type {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom:1px solid white;
+    margin-bottom:20px;
+    padding-bottom: 20px;
+  }
+
+  .temperatures-display-div {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .weather-data-container {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+.display-toggle {
+  display:none;
+}

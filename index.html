@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <div id="search-field">
+      <input id="input-text" placeholder="enter city name ">
+      <a id="search-btn"> 
+      <img id="search-img"src="images/search.svg">
+      </a>
+    </div>
+
+    <div id="display-toggle" class="display-toggle">
+
+      <div class="current-weather-type">
+        <img id="weather-type-img"src="images/clear.png">
+        <div class="temperatures-display-div">
+        <p id="current-temperature">22°C</p>
+        <p><span id="min-temp-display">15°C</span> / <span id="max-temp-display">24°C</span></p>
+      </div>
+    </div>
+    
+    <div class="weather-data-container">
+      <div class="data-container">
+        <img class="weather-data-img" src="images/icons/wi-humidity.svg">
+        <p id="humidity">77 %</p>
+      </div>
+      <div class="data-container">
+        <img class="weather-data-img" src="images/icons/wi-strong-wind.svg">
+        <p id="wind-speed">22 km/h</p>
+      </div>
+      <div class="data-container">
+        <img class="weather-data-img" src="images/icons/wi-sunset.svg">
+        <p id="sunset">22 km/h</p>
+      </div>
+      <div class="data-container">
+        <img class="weather-data-img" src="images/icons/wi-barometer.svg">
+        <p id="pressure">22 km/h</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
